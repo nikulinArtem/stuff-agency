@@ -1,0 +1,38 @@
+@import url(header.css);
+@import url(slider.css);
+@import url(footer.css);
+@import url(home.css);
+@import url(stuff.css);
+
+/* Глобальные */
+
+/*Шрифты*/
+@font-face {
+    font-family: 'BookAntiqua';
+    src: url("../fonts/book-antiqua.ttf");
+}
+@font-face {
+    font-family: 'GaramondC';
+    src: url("../fonts/GaramondC.otf");
+}
+
+/*Обнуление отступов*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*Настройка разметки*/
+.container {
+    width: 100%;
+    display: flex; justify-content: center;
+    background: url('../images/background.png') repeat;
+}
+.container-content {
+    width: 930px;
+    box-shadow: 0 0 10px #7a5434;
+}
+
+
+
+

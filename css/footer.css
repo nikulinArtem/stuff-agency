@@ -1,0 +1,49 @@
+/*Футер*/
+
+.footer-items {
+    width: 100%;
+    height: 43px;
+    color: #FFFBEA;
+    background-color: #4E2C1E;
+    border-bottom: 2px solid black;
+}
+.contact-info {
+    width: 100%;
+    height: 43px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #FFFBEA;
+    background: linear-gradient(180deg, #5F4430, #A5835D);
+}
+.footer-links {
+    list-style: none;
+    height: 43px;
+    margin: 0 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.footer-links li a {
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #FFFBEA;
+}
+.contact-tel h3 {
+    font-family: BookAntiqua, serif;
+    font-weight: 300;
+    text-wrap: none;
+    color: white;
+    margin-left: 35px;
+}
+.author  {
+    display: flex;
+    align-items: center;
+    margin-right: 35px;
+
+}
+.author p {
+    font-family: Tahoma, sans-serif;
+    font-size: 14px;
+}

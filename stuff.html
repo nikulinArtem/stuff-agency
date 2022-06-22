@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Ваш дом</title>
+</head>
+<body>
+    <div class="container" >
+        <div class="container-content">
+            <!--        Шапка-->
+            <header class="header">
+                <div class="header-items">
+                    <div class="item-tel">
+                        <h2 class="tel">8 (4872) 31-13-45</h2>
+                    </div>
+                    <div class="button-list">
+                        <ul class="buttons">
+                            <li class="button-request">
+                                <button class="request">Оставить заявку</button>
+                            </li>
+                            <li class="button-send">
+                                <button class="send">Отправить резюме</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!--        Навигация-->
+                <div class="navigation">
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">ГЛАВНАЯ</a>
+                        </li>
+                        <li class="nav-item" id="drop-list">
+                            <a href="#" class="nav-link">ПОДОБРАТЬ ПЕРСОНАЛ</a>
+                            <ul class="pop-up">
+                                <li class="pop-up_item">
+                                    <a href="#" class="pop-up_link">О нас</a>
+                                </li>
+                                <li class="pop-up_item">
+                                    <a href="#" class="pop-up_link">Задать вопрос</a>
+                                </li>
+                                <li class="pop-up_item">
+                                    <a href="#" class="pop-up_link">Это интересно</a>
+                                </li>
+                                <li class="pop-up_item">
+                                    <a href="#" class="pop-up_link">Отзывы</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">ЦЕНЫ</a>
+                        </li>
+                        <li class="list_logo">
+                            <img src="images/logo.png" alt="logo" class="logo">
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">ОСТАВИТЬ ЗАЯВКУ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">ОСТАВИТЬ ВАКАНСИЮ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">КОНТАКТЫ</a>
+                        </li>
+                    </ul>
+                </div>
+            </header>
+
+            <!--    Слайдер-->
+            <div class="slider">
+                <div class="slider-item">
+                    <img src="images/slider/1.png" alt="Первый слайд">
+                </div>
+
+                <div class="slider-item">
+                    <img src="images/slider/2.png" alt="Второй слайд">
+                </div>
+
+                <div class="slider-item">
+                    <img src="images/slider/3.png" alt="Третий слайд">
+                </div>
+
+                <div class="slider-item">
+                    <img src="images/slider/4.png" alt="Третий слайд">
+                </div>
+
+                <div class="slider-item">
+                    <img src="images/slider/5.png" alt="Третий слайд">
+                </div>
+
+                <div class="slider-item">
+                    <img src="images/slider/6.png" alt="Третий слайд">
+                </div>
+
+                <div class="slider-dots">
+                    <span class="slider-dots_item" onclick="currentSlide(1)"></span>
+                    <span class="slider-dots_item" onclick="currentSlide(2)"></span>
+                    <span class="slider-dots_item" onclick="currentSlide(3)"></span>
+                    <span class="slider-dots_item" onclick="currentSlide(4)"></span>
+                    <span class="slider-dots_item" onclick="currentSlide(5)"></span>
+                    <span class="slider-dots_item" onclick="currentSlide(6)"></span>
+                </div>
+            </div>
+
+            <div class="stuff">
+
+                <div class="stuff-form">
+                    <form method="get">
+                        <div class="job-select">
+                            <p>Показать только</p>
+                            <label for="stuff-select">
+                                <select id="stuff-select">
+                                    <option value="nanny">Няня</option>
+                                </select>
+                            </label>
+                        </div>
+
+                        <div class="params">
+
+                            <div class="exp">
+                                <p>Стаж от</p>
+                                <label for="min-exp">
+                                    <input type="number" id="min-exp" value="1" min="1" max="65">
+                                </label>
+                                <p>до</p>
+                                <label for="max-exp">
+                                    <input type="number" id="max-exp" value="30" min="1" max="65">
+                                </label>
+                                <p>лет</p>
+                            </div>
+
+                            <div class="age">
+                                <p>Возраст от</p>
+                                <label for="min-age">
+                                    <input type="number" id="min-age" value="25" min="18" max="65">
+                                </label>
+                                <p>до</p>
+                                <label for="max-age">
+                                    <input type="number" id="max-age" value="65" min="18" max="65">
+                                </label>
+                                <p>лет</p>
+                            </div>
+
+                        </div>
+
+
+
+                        <button type="submit">ПОДОБРАТЬ</button>
+
+                    </form>
+                </div>
+
+                <div class="stuff-table"></div>
+
+                <div class="about-info">
+                    <p>
+                        C наличием в доме обслуживающего персонала - водителя, няни, гувернантки, горничной, домработницы - это вовсе не дань моде и не причуды избалованных нежданно свалившимся богатством нуворишей. Напротив, услугами сиделки или няни пользуются сегодня те, кто отлично знает цену деньгам и своему времени
+                    </p>
+                    <p>
+                        Наличие в доме обслуживающего персонала - водителя, няни, гувернантки, горничной, домработницы - это вовсе не дань моде и не причуды избалованных нежданно свалившимся богатством нуворишей. Напротив, услугами сиделки или няни пользуются сегодня те, кто отлично знает цену деньгам и своему времени. Люди, для которых важно не только вырастить ребенка, но и создать основу будущего благосостояния, построив свою карьеру - вот основная категорий заказчиков, которые ежедневно пользуются услугами нашей компании по подбору домашнего персонала.
+                        Заказ няни, сиделки или домработницы является благом не только для женщины, которая имеет возможность строить свою карьеру или получить, наконец, передышку от выполнения бесконечных домашних обязанностей, но и для всех остальных членов семьи, которые могут провести вместе свободный вечер или выходные. А доступные цены, которые устанавливает на свои услуги наша компания, и предлагаемый нами широкий выбор различных категорий домашнего персонала делают исключительно удобным и, главное, безопасным процесс поиска няни для малыша, сиделки для пожилых членов семьи или домработницы для квартиры или загородного особняка.
+                    </p>
+                    <p>
+                        Наличие в доме обслуживающего персонала - водителя, няни, гувернантки, горничной, домработницы - это вовсе не дань моде и не причуды избалованных нежданно свалившимся богатством нуворишей. Напротив, услугами сиделки или няни пользуются сегодня те, кто отлично знает цену деньгам и своему времени. Люди, для которых важно не только вырастить ребенка, но и создать основу будущего благосостояния, построив свою карьеру - вот основная категорий заказчиков, которые ежедневно пользуются услугами нашей компании по подбору домашнего персонала.
+                        Заказ няни, сиделки или домработницы является благом не только для женщины, которая имеет возможность строить свою карьеру
+                    </p>
+                </div>
+            </div>
+
+            <!--        футер-->
+            <footer class="footer">
+
+                <div class="footer-items">
+                    <ul class="footer-links">
+                        <li>
+                            <a href="index.html">ГЛАВНАЯ</a>
+                        </li>
+                        &#124;
+                        <li>
+                            <a href="stuff.html">ПОДОБРАТЬ ПЕРСОНАЛ</a>
+                        </li>
+                        &#124;
+                        <li>
+                            <a href="#">ЦЕНЫ</a>
+                        </li>
+                        &#124;
+                        <li>
+                            <a href="index.html">ГЛАВНАЯ</a>
+                        </li>
+                        &#124;
+                        <li>
+                            <a href="stuff.html">ПОДОБРАТЬ ПЕРСОНАЛ</a>
+                        </li>
+                        &#124;
+                        <li>
+                            <a href="#">ЦЕНЫ</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="contact-info">
+                    <div class="contact-tel">
+                        <h3>8 (4872) 31-13-45</h3>
+                    </div>
+                    <div class="author">
+                        <p>Разработка и продвижение сайта компанией «Юни Веб» -</p>
+                        <img src="images/UW.png" alt="UniWeb" class="uniweb-logo">
+                    </div>
+                </div>
+
+            </footer>
+
+        </div>
+    </div>
+
+
+
+<script src="script.js"></script>
+</body>
+</html>

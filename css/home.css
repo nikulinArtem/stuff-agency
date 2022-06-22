@@ -1,0 +1,122 @@
+/*Уникальный контент для главной страницы*/
+
+/*Блок информации*/
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFBEA;
+}
+.about-cards {
+    display: flex;
+    justify-content: center;
+    width: 891px;
+    height: 283px;
+    margin-top: 26px;
+    margin-bottom: 20px;
+    background-color: #FFFBEA;
+    background-image: url("../images/ornament.png");
+}
+
+/*Карточки блока информации */
+
+.left-block, .right-block {
+    width: 445px;
+    height: 283px;
+}
+.left-block h2, .right-block h2 {
+    font-family: 'GaramondC', serif;
+    color: #35190d;
+}
+.left-block h2 {
+    margin-top: 29px;
+    margin-left: 36px;
+}
+.right-block h2 {
+    margin-top: 29px;
+    margin-right: 36px;
+}
+.left-block p, .right-block p {
+    font-family: Arial, sans-serif;
+    color: #35190d;
+    font-size: 14px;
+}
+.left-block p {
+    margin-top: 12px;
+    margin-left: 36px;
+    margin-right: 25px;
+}
+.right-block p {
+    margin-top: 12px;
+    margin-right: 36px;
+    margin-left: 25px;
+}
+.left-block {
+    text-align: left;
+}
+.right-block {
+    text-align: right;
+}
+.left-block img {
+    float: right;
+    margin: 10px 25px 10px 10px;
+
+}
+.right-block img {
+    float: left;
+    margin: 10px 10px 10px 25px;
+}
+.left-block_button, .right-block_button {
+    cursor: pointer;
+    width: 125px;
+    height: 25px;
+    border: 1px solid #4E2C1E;
+    border-radius: 5px;
+}
+.left-block_button {
+    float: right;
+    margin: 10px 25px 10px 0;
+    font-family: Verdana, sans-serif;
+    color: #3e2318;
+    background: rgb(253,245,215);
+    background: linear-gradient(180deg, rgba(253,245,215,1) 0%, rgba(215,192,116,1) 70%, rgba(245,228,183,1) 100%);
+}
+.right-block_button {
+    float: left;
+    margin: 10px 0 10px 25px;
+    color: #FFFBEA;
+    background: linear-gradient(180deg, #E1B67A, #864F0D);
+}
+
+/*Картинки блока информации*/
+.about-images {
+    display: flex;
+    justify-content: center;
+}
+.stuff-img {
+    width: 182px;
+    height: 189px;
+    border: 2px solid #7a5434;
+    margin: 15px 12px;
+}
+.stuff-img img {
+    width: 182px;
+    height: 189px;
+}
+
+/*Основная текстовая информация*/
+
+.about-info {
+    margin: 10px 22px 110px 22px;
+    font-family: Arial, sans-serif;
+    color: #3e2318;
+}
+.about-info h2 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+.about-info p {
+    font-size: 14px;
+    margin: 8px 0;
+}

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Ваш дом</title>
+</head>
+<body>
+<div class="container" >
+    <div class="container-content">
+        <!--        Шапка-->
+        <header class="header">
+            <div class="header-items">
+                <div class="item-tel">
+                    <h2 class="tel">8 (4872) 31-13-45</h2>
+                </div>
+                <div class="button-list">
+                    <ul class="buttons">
+                        <li class="button-request">
+                            <button class="request">Оставить заявку</button>
+                        </li>
+                        <li class="button-send">
+                            <button class="send">Отправить резюме</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!--        Навигация-->
+            <div class="navigation">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">ГЛАВНАЯ</a>
+                    </li>
+                    <li class="nav-item" id="drop-list">
+                        <a href="#" class="nav-link">ПОДОБРАТЬ ПЕРСОНАЛ</a>
+                        <ul class="pop-up">
+                            <li class="pop-up_item">
+                                <a href="#" class="pop-up_link">О нас</a>
+                            </li>
+                            <li class="pop-up_item">
+                                <a href="#" class="pop-up_link">Задать вопрос</a>
+                            </li>
+                            <li class="pop-up_item">
+                                <a href="stuff.html" class="pop-up_link">Это интересно</a>
+                            </li>
+                            <li class="pop-up_item">
+                                <a href="#" class="pop-up_link">Отзывы</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">ЦЕНЫ</a>
+                    </li>
+                    <li class="list_logo">
+                        <img src="images/logo.png" alt="logo" class="logo">
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">ОСТАВИТЬ ЗАЯВКУ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">ОСТАВИТЬ ВАКАНСИЮ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">КОНТАКТЫ</a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+
+        <!--    Слайдер-->
+        <div class="slider">
+            <div class="slider-item">
+                <img src="images/slider/1.png" alt="Первый слайд">
+            </div>
+
+            <div class="slider-item">
+                <img src="images/slider/2.png" alt="Второй слайд">
+            </div>
+
+            <div class="slider-item">
+                <img src="images/slider/3.png" alt="Третий слайд">
+            </div>
+
+            <div class="slider-item">
+                <img src="images/slider/4.png" alt="Третий слайд">
+            </div>
+
+            <div class="slider-item">
+                <img src="images/slider/5.png" alt="Третий слайд">
+            </div>
+
+            <div class="slider-item">
+                <img src="images/slider/6.png" alt="Третий слайд">
+            </div>
+
+            <div class="slider-dots">
+                <span class="slider-dots_item" onclick="currentSlide(1)"></span>
+                <span class="slider-dots_item" onclick="currentSlide(2)"></span>
+                <span class="slider-dots_item" onclick="currentSlide(3)"></span>
+                <span class="slider-dots_item" onclick="currentSlide(4)"></span>
+                <span class="slider-dots_item" onclick="currentSlide(5)"></span>
+                <span class="slider-dots_item" onclick="currentSlide(6)"></span>
+            </div>
+        </div>
+
+        <div class="about">
+            <div class="about-cards">
+                <div class="left-block">
+                    <img src="images/home.png" alt="home" >
+                    <h2>Постоянный персонал</h2>
+                    <p>Наличие в доме обслуживающего
+                        персонала - водителя, няни,
+                        гувернантки, горничной,
+                        домработницы - это вовсе не
+                        дань моде и не причуды избалованных нежданно свалившимся богатством нуворишей. Напротив, услугами сиделки или няни пользуются сегодня те, кто отлично знает цену деньгам и своему времени.
+                    </p>
+                    <button class="left-block_button">ПОДРОБНЕЕ</button>
+                </div>
+                <div class="right-block">
+                    <img src="images/clock.png" alt="clock" >
+                    <h2>Временный персонал</h2>
+                    <p>Наличие в доме обслуживающего
+                        персонала - водителя, няни,
+                        гувернантки, горничной,
+                        домработницы - это вовсе не
+                        дань моде и не причуды избалованных нежданно свалившимся богатством нуворишей. Напротив, услугами сиделки или няни пользуются сегодня те, кто отлично знает цену деньгам и своему времени.
+                    </p>
+                    <button class="right-block_button">ПОДРОБНЕЕ</button>
+                </div>
+            </div>
+
+            <div class="about-images">
+                <div class="stuff-img">
+                    <img src="images/image_6.png" alt="image1">
+                </div>
+                <div class="stuff-img">
+                    <img src="images/image_7.png" alt="image2">
+                </div>
+                <div class="stuff-img">
+                    <img src="images/image_12.png" alt="image3">
+                </div>
+                <div class="stuff-img">
+                    <img src="images/image_15.png" alt="image4">
+                </div>
+            </div>
+
+            <div class="about-info">
+                <h2>Заголовок</h2>
+                <p>
+                    C наличием в доме обслуживающего персонала - водителя, няни, гувернантки, горничной, домработницы - это вовсе не дань моде и не причуды избалованных нежданно свалившимся богатством нуворишей. Напротив, услугами сиделки или няни пользуются сегодня те, кто отлично знает цену деньгам и своему времени
+                </p>
+                <p>
+                    Наличие в доме обслуживающего персонала - водителя, няни, гувернантки, горничной, домработницы - это вовсе не дань моде и не причуды избалованных нежданно свалившимся богатством нуворишей. Напротив, услугами сиделки или няни пользуются сегодня те, кто отлично знает цену деньгам и своему времени. Люди, для которых важно не только вырастить ребенка, но и создать основу будущего благосостояния, построив свою карьеру - вот основная категорий заказчиков, которые ежедневно пользуются услугами нашей компании по подбору домашнего персонала.
+                    Заказ няни, сиделки или домработницы является благом не только для женщины, которая имеет возможность строить свою карьеру или получить, наконец, передышку от выполнения бесконечных домашних обязанностей, но и для всех остальных членов семьи, которые могут провести вместе свободный вечер или выходные. А доступные цены, которые устанавливает на свои услуги наша компания, и предлагаемый нами широкий выбор различных категорий домашнего персонала делают исключительно удобным и, главное, безопасным процесс поиска няни для малыша, сиделки для пожилых членов семьи или домработницы для квартиры или загородного особняка.
+                </p>
+                <p>
+                    Наличие в доме обслуживающего персонала - водителя, няни, гувернантки, горничной, домработницы - это вовсе не дань моде и не причуды избалованных нежданно свалившимся богатством нуворишей. Напротив, услугами сиделки или няни пользуются сегодня те, кто отлично знает цену деньгам и своему времени. Люди, для которых важно не только вырастить ребенка, но и создать основу будущего благосостояния, построив свою карьеру - вот основная категорий заказчиков, которые ежедневно пользуются услугами нашей компании по подбору домашнего персонала.
+                    Заказ няни, сиделки или домработницы является благом не только для женщины, которая имеет возможность строить свою карьеру
+                </p>
+            </div>
+        </div>
+
+<!--        футер-->
+        <footer class="footer">
+
+            <div class="footer-items">
+                <ul class="footer-links">
+                    <li>
+                        <a href="index.html">ГЛАВНАЯ</a>
+                    </li>
+                    &#124;
+                    <li>
+                        <a href="stuff.html">ПОДОБРАТЬ ПЕРСОНАЛ</a>
+                    </li>
+                    &#124;
+                    <li>
+                        <a href="#">ЦЕНЫ</a>
+                    </li>
+                    &#124;
+                    <li>
+                        <a href="index.html">ГЛАВНАЯ</a>
+                    </li>
+                    &#124;
+                    <li>
+                        <a href="#">ПОДОБРАТЬ ПЕРСОНАЛ</a>
+                    </li>
+                    &#124;
+                    <li>
+                        <a href="#">ЦЕНЫ</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="contact-info">
+                <div class="contact-tel">
+                    <h3>8 (4872) 31-13-45</h3>
+                </div>
+                <div class="author">
+                    <p>Разработка и продвижение сайта компанией «Юни Веб» -</p>
+                    <img src="images/UW.png" alt="UniWeb" class="uniweb-logo">
+                </div>
+            </div>
+
+        </footer>
+
+    </div>
+</div>
+
+
+
+<script src="script.js"></script>
+</body>
+</html>
