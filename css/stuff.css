@@ -117,6 +117,7 @@ td {
 .stuff-container .template:nth-child(even) td {
     border-left: 1px solid #E9C06B;
     border-right: 1px solid #E9C06B;
+    border-bottom: 1px solid #E9C06B;
 }
 .template-name {
     font-weight: bold;
