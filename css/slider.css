@@ -1,4 +1,4 @@
-/* Собственно сам слайдер */
+ /*слайдер*/
 .slider {
     background-color: #FFFBEA;
     width: 100%;
@@ -7,7 +7,7 @@
     margin: auto auto 0;
     overflow: hidden;
 }
-/* Картинка масштабируется по отношению к родительскому элементу */
+ /*Картинка */
 .slider .slider-item img {
     object-fit: cover;
     width: 100%;
@@ -16,7 +16,7 @@
 
 }
 
-/* Кружочки */
+ /*Кружочки */
 .slider-dots {
     padding-top: 5px;
     padding-bottom: 5px;
@@ -44,11 +44,4 @@
     background: #4E2C1E;
     border: 2px solid white;
     box-shadow: 0 0 0 1px #4E2C1E;
-}
-/* Анимация слайдов */
-.slider .item {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
-    animation-name: fade;
-    animation-duration: 1.5s;
 }
