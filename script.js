@@ -26,6 +26,16 @@ function showSlides(n) {
     dots[slideIndex - 1].className += " active";
 }
 
+let timer = 0;
+makeTimer();
+function makeTimer(){
+    clearInterval(timer);
+    timer = setInterval(function(){
+        slideIndex++;
+        showSlides(slideIndex);
+    },2000);
+}
+
 
 document.addEventListener('DOMContentLoaded', () => {
 // Всплывающее окно
