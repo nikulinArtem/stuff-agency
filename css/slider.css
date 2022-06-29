@@ -26,12 +26,14 @@
 }
 .slider-dots_item{
     cursor: pointer;
-    height: 10px;
-    width: 10px;
-    margin: 0 2px;
+    height: 13px;
+    width: 13px;
+    margin: 0 7px;
     background-color: #E2B67D;
-    border: 2px solid transparent;
+    /*border: 2px solid transparent;*/
     border-radius: 50%;
+    box-shadow: 0 1px 3px 0 #4E2C1E inset;
+
     display: inline-block;
     vertical-align: middle;
     transition: background-color 0.6s ease;

@@ -1,3 +1,4 @@
+
 // Слайдер
 let slideIndex = 1;
 showSlides(slideIndex);
@@ -47,9 +48,48 @@ document.addEventListener('DOMContentLoaded', () => {
     navItem.addEventListener('mouseover', ev => list.style.display = '');
     navItem.addEventListener('mouseout', ev => list.style.display = 'none');
 
+// Всплывающая форма
+    const request = document.getElementsByClassName('button-request')[0];
+    const send = document.getElementsByClassName('button-send')[0];
+    const requestform = document.getElementsByClassName('request-form')[0];
+    const sendform = document.getElementsByClassName('send-form')[0];
+    const requestBtn = document.getElementsByClassName('request')[0];
+    const sendBtn = document.getElementsByClassName('send')[0];
+    console.log(requestBtn)
+    console.log(requestform);
+
+    requestform.style.display = 'none';
+    sendform.style.display = 'none';
+
+    request.addEventListener('mouseover', ev => {
+        requestform.style.display = '';
+        requestBtn.style.background = 'linear-gradient(180deg, #E1B67A, #864F0D)';
+        requestBtn.style.border = '1px solid #AE741F';
+        requestBtn.style.color = 'white';
+    });
+    request.addEventListener('mouseout', ev => {
+        requestform.style.display = 'none';
+        requestBtn.style.background = 'rgb(253,245,215)';
+        requestBtn.style.background = 'linear-gradient(180deg, rgba(253,245,215,1) 0%, rgba(215,192,116,1) 70%, rgba(245,228,183,1) 100%)';
+        requestBtn.style.color = '#472800';
+    });
+    send.addEventListener('mouseover', ev => {
+        sendform.style.display = '';
+        sendBtn.style.background = 'linear-gradient(180deg, #E1B67A, #864F0D)';
+        sendBtn.style.border = '1px solid #AE741F';
+        sendBtn.style.color = 'white';
+    });
+    send.addEventListener('mouseout', ev => {
+        sendform.style.display = 'none';
+        sendBtn.style.background = 'rgb(253,245,215)';
+        sendBtn.style.background = 'linear-gradient(180deg, rgba(253,245,215,1) 0%, rgba(215,192,116,1) 70%, rgba(245,228,183,1) 100%)';
+        sendBtn.style.color = '#472800';
+    });
+
 // таблица с персоналом
 
 // Массив сотрудников
+
     let people = [
         {
             name: 'Лопухова Надежда Александровна',
@@ -111,12 +151,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // Подключение HTML-элементов
 // Форма
+
+    // const form = document.getElementsByClassName('js-stuff-form')[0];
     const formJob = document.getElementById('stuff-select');
     const minExp = document.getElementById('min-exp');
     const maxExp = document.getElementById('max-exp');
     const minAge = document.getElementById('min-age');
     const maxAge = document.getElementById('max-age');
-    const submitBtn = document.getElementsByClassName('submit-btn');
+    const submitBtn = document.getElementsByClassName('submit-btn')[0];
 // Таблица
     let stuffName = document.getElementsByClassName('js-stuff-name')[0];
     let stuffJob = document.getElementsByClassName('js-stuff-job')[0];
@@ -143,19 +185,21 @@ document.addEventListener('DOMContentLoaded', () => {
         stuffContainer.appendChild(template)
     })
 
-
-    document.querySelector('form').addEventListener('submit', e => {
+    console.log(submitBtn);
+    submitBtn.addEventListener('click', (e) => {
         e.preventDefault();
         if (stuffContainer.childElementCount > 0) {
             stuffContainer.innerHTML = '';
         }
         let filterPeople = peopleArr.filter(item => {
-            return item.job === formJob.value || !formJob.value
+            return (item.job === formJob.value || !formJob.value)
                 && item.age >= minAge.value
                 && item.age <= maxAge.value
                 && item.exp >= minExp.value
                 && item.exp <= maxExp.value
         });
+
+        console.log(filterPeople);
 
         filterPeople.forEach(stuff => {
             template = tableTemplate.cloneNode(true);
