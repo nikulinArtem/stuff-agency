@@ -1,4 +1,3 @@
-
 // Слайдер
 let slideIndex = 1;
 showSlides(slideIndex);
@@ -45,45 +44,50 @@ document.addEventListener('DOMContentLoaded', () => {
 
     list.style.display = 'none';
 
-    navItem.addEventListener('mouseover', ev => list.style.display = '');
-    navItem.addEventListener('mouseout', ev => list.style.display = 'none');
+    document.addEventListener('click', e => {
+        let target = e.target;
+        if (!list.contains(target) && !navItem.contains(target)) {
+            list.style.display = 'none';
+
+        } else if (navItem.contains(target)) {
+            list.style.display = (list.style.display !== 'block') ? 'block' : 'none';
+
+        }
+
+        if (list.style.display === 'block') {
+            navItem.style.background = 'linear-gradient(0deg, #faedc7 0%, #eacf8f 13%, #e8c478 58%, #fff9e0 96%, #fff9e0 100%)';
+            navItem.firstElementChild.style.color = '#3e2318';
+        } else {
+            navItem.style.background = '';
+            navItem.firstElementChild.style.color = 'white';
+        }
+    })
 
 // Всплывающая форма
     const request = document.getElementsByClassName('button-request')[0];
     const send = document.getElementsByClassName('button-send')[0];
-    const requestform = document.getElementsByClassName('request-form')[0];
-    const sendform = document.getElementsByClassName('send-form')[0];
-    const requestBtn = document.getElementsByClassName('request')[0];
-    const sendBtn = document.getElementsByClassName('send')[0];
-    console.log(requestBtn)
-    console.log(requestform);
+    const requestForm = document.getElementsByClassName('request-form')[0];
+    const sendForm = document.getElementsByClassName('send-form')[0];
 
-    requestform.style.display = 'none';
-    sendform.style.display = 'none';
 
-    request.addEventListener('mouseover', ev => {
-        requestform.style.display = '';
-        requestBtn.style.background = 'linear-gradient(180deg, #E1B67A, #864F0D)';
-        requestBtn.style.border = '1px solid #AE741F';
-        requestBtn.style.color = 'white';
-    });
-    request.addEventListener('mouseout', ev => {
-        requestform.style.display = 'none';
-        requestBtn.style.background = 'rgb(253,245,215)';
-        requestBtn.style.background = 'linear-gradient(180deg, rgba(253,245,215,1) 0%, rgba(215,192,116,1) 70%, rgba(245,228,183,1) 100%)';
-        requestBtn.style.color = '#472800';
-    });
-    send.addEventListener('mouseover', ev => {
-        sendform.style.display = '';
-        sendBtn.style.background = 'linear-gradient(180deg, #E1B67A, #864F0D)';
-        sendBtn.style.border = '1px solid #AE741F';
-        sendBtn.style.color = 'white';
-    });
-    send.addEventListener('mouseout', ev => {
-        sendform.style.display = 'none';
-        sendBtn.style.background = 'rgb(253,245,215)';
-        sendBtn.style.background = 'linear-gradient(180deg, rgba(253,245,215,1) 0%, rgba(215,192,116,1) 70%, rgba(245,228,183,1) 100%)';
-        sendBtn.style.color = '#472800';
+    requestForm.style.display = 'none';
+    sendForm.style.display = 'none';
+
+    document.addEventListener('click', (event) => {
+        let target = event.target;
+        if (request.contains(target)) {
+            requestForm.style.display = 'block';
+
+        } else if (!requestForm.contains(target)) {
+            requestForm.style.display = 'none';
+
+        }
+
+        if (send.contains(target)) {
+            sendForm.style.display = 'block';
+        } else if (!sendForm.contains(target)) {
+            sendForm.style.display = 'none';
+        }
     });
 
 // таблица с персоналом
@@ -93,55 +97,55 @@ document.addEventListener('DOMContentLoaded', () => {
     let people = [
         {
             name: 'Лопухова Надежда Александровна',
-            job: 'гувернантка',
+            job: 'Гувернантка',
             age: 45,
             exp: 15
         },
         {
             name: 'Ермакова Надежда Ивановна',
-            job: 'няня',
+            job: 'Няня',
             age: 30,
             exp: 5
         },
         {
             name: 'Филимонов Константин Николаевич',
-            job: 'садовник',
+            job: 'Садовник',
             age: 50,
             exp: 20
         },
         {
             name: 'Иванова Светлана Игоревна',
-            job: 'уборщица',
+            job: 'Уборщица',
             age: 35,
             exp: 7
         },
         {
             name: 'Миронов Юрий Герасимович',
-            job: 'конюх',
+            job: 'Конюх',
             age: 60,
             exp: 15
         },
         {
             name: 'Новикова Нина Алексеевна',
-            job: 'повар',
+            job: 'Повар',
             age: 40,
             exp: 17
         },
         {
             name: 'Шохина Екатерина Юрьевна',
-            job: 'гувернантка',
+            job: 'Гувернантка',
             age: 48,
             exp: 16
         },
         {
             name: 'Косткина Надежда Дмитриевна',
-            job: 'гувернантка',
+            job: 'Гувернантка',
             age: 39,
             exp: 9
         },
         {
             name: 'Рудь Ольга Алексеевна',
-            job: 'гувернантка',
+            job: 'Гувернантка',
             age: 55,
             exp: 18
         }
@@ -160,10 +164,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const maxAge = document.getElementById('max-age');
     const submitBtn = document.getElementsByClassName('submit-btn')[0];
 // Таблица
-    let stuffName = document.getElementsByClassName('js-stuff-name')[0];
-    let stuffJob = document.getElementsByClassName('js-stuff-job')[0];
-    let stuffAge = document.getElementsByClassName('js-stuff-age')[0];
-    let stuffExp = document.getElementsByClassName('js-stuff-exp')[0];
     let stuffContainer = document.getElementsByClassName('js-stuff-container')[0];
     let tableTemplate = (() => {
         let template = document.getElementsByClassName('js-stuff')[0].cloneNode(true);

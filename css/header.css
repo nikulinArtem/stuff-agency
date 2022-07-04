@@ -5,11 +5,12 @@
     position: relative;
     justify-content: space-between;
     padding-top: 6px;
-    background: #4E2C1E;
+    background: #4e2c1e;
 }
 .tel {
     font-family: BookAntiqua, serif;
     font-weight: 300;
+    font-size: 26px;
     text-wrap: none;
     color: white;
     padding-top: 12px;
@@ -25,20 +26,22 @@
     cursor: pointer;
     width: 173px;
     height: 24px;
-    border: none;
+    border: 1px solid #d8c992;
     border-radius: 5px;
     margin-bottom: 9px;
-    background: rgb(253,245,215);
-    background: linear-gradient(180deg, rgba(253,245,215,1) 0%, rgba(215,192,116,1) 70%, rgba(245,228,183,1) 100%);
+    background: linear-gradient(0deg, #faedc7 0%, #eacf8f 13%, #e8c478 58%, #fff9e0 96%, #fff9e0 100%);
     font-family: BookAntiqua, serif;
     font-weight: 300;
     font-size: medium;
     color: #472800;
+    text-shadow: 0 1px 0 rgba(17, 17, 26, 0.30);
 }
-.send:hover, .request:hover {
-    background: linear-gradient(180deg, #E1B67A, #864F0D);
-    border: 1px solid #AE741F;
+.send:active, .request:active {
+    background: linear-gradient(0deg, #77470b 0%, #d39538 73%, #f5dcb9 96%, #fff9e0 100%);
+    border: 1px solid #ab6e17;
     color: white;
+    text-shadow: 0 1px 0 rgba(17, 17, 26, 0.46);
+
 }
 
 .request-form {
@@ -47,20 +50,23 @@
     right: 23px;
     width: 320px;
     height: auto;
-    background-color: rgba(248, 239, 217, 0.85);
-    border: 1px solid #CB8C31;
+    background: linear-gradient(0deg, rgba(247, 236, 212, 0.85) 0%, rgba(255, 255, 255, 0.85) 100%);
+    border: 1px solid #cd8e31;
     border-radius: 5px;
+
 }
 .send-form {
     z-index: 3;
     position: absolute;
-    top: 69px;
+    top: 70px;
     right: 23px;
     width: 320px;
     height: auto;
-    background-color: rgba(248, 239, 217, 0.85);
-    border: 1px solid #CB8C31;
+    background: linear-gradient(0deg, rgba(247, 236, 212, 0.85) 0%, rgba(255, 255, 255, 0.85) 100%);
+    border: 1px solid #cd8e31;
     border-radius: 5px;
+    font-family: Verdana, sans-serif;
+    font-size: 14px;
 }
 .request-form form, .send-form form {
     display: flex;
@@ -75,6 +81,8 @@
     margin: 5px 0;
     text-indent: 10px;
     border: 1px solid #CB8C31;
+    font-family: Verdana, sans-serif;
+    font-size: 14px;
 }
 .request-form form select, .send-form form select {
     cursor: pointer;
@@ -84,6 +92,8 @@
     text-indent: 5px;
     border: 1px solid #CB8C31;
     background: linear-gradient(90deg, white 0%, white 93%, #E4AC59 93%, #E4AC59 100%);
+    font-family: Verdana, sans-serif;
+    font-size: 14px;
 }
 .request-form form textarea {
     width: 310px;
@@ -91,37 +101,43 @@
     margin: 5px 0;
     text-indent: 10px;
     border: 1px solid #CB8C31;
+    font-family: Verdana, sans-serif;
+    font-size: 14px;
 }
 .request-form form button {
     cursor: pointer;
     width: 143px;
     height: 25px;
     margin: 25px 0 10px 0;
-    background: linear-gradient(180deg, #E1B67A, #864F0D);
-    border: 1px solid #AE741F;
+    background: linear-gradient(0deg, #77470b 0%, #d39538 73%, #f5dcb9 96%, #fff9e0 100%);
+    border: 1px solid #ab6e17;
     color: white;
+    text-shadow: 0 1px 0 rgba(17, 17, 26, 0.46);
     border-radius: 5px;
+    font-family: Verdana, sans-serif;
 }
 .send-form form button {
     cursor: pointer;
     width: 143px;
     height: 25px;
     margin: 20px 0 10px 0;
-    background: linear-gradient(180deg, #E1B67A, #864F0D);
-    border: 1px solid #AE741F;
+    background: linear-gradient(0deg, #77470b 0%, #d39538 73%, #f5dcb9 96%, #fff9e0 100%);
+    border: 1px solid #ab6e17;
     color: white;
+    text-shadow: 0 1px 0 rgba(17, 17, 26, 0.46);
     border-radius: 5px;
+    font-family: Verdana, sans-serif;
 }
 .request-form form button:hover, .send-form form button:hover {
-    background: rgb(253,245,215);
-    background: linear-gradient(180deg, rgba(253,245,215,1) 0%, rgba(215,192,116,1) 70%, rgba(245,228,183,1) 100%);
+    background: linear-gradient(0deg, #faedc7 0%, #eacf8f 13%, #e8c478 58%, #fff9e0 96%, #fff9e0 100%);
+    border: 1px solid #d8c992;
     color: #472800;
 }
 
 /*Навигация*/
 
 .navigation {
-    border-bottom: 2px solid #4E2C1E;
+    border-bottom: 1px solid #4E2C1E;
     border-radius: 5px;
 
 }
@@ -139,8 +155,7 @@
     border-top: 1px solid #D5BDA0;
     border-bottom: 1px solid #D5BDA0;
     border-radius: 5px;
-
-    background: linear-gradient(180deg, #E1B67A, #864F0D);
+    background: linear-gradient(0deg, #a4671f 0%, #834c0b 14%, #834c0b 25%, #b0782b 55%, #e9c087 100%);
 }
 .nav-list .nav-item:first-child {
     width: 114px;
@@ -191,6 +206,7 @@
     font-size: 11px;
     text-decoration: none;
     color: white;
+    text-shadow: 0 1px 0 rgba(17, 17, 26, 0.46);
     /*padding: 10px 25px;*/
 }
 
@@ -206,21 +222,15 @@
     position: relative;
 }
 
-#drop-list:hover {
-    background: linear-gradient(180deg, rgba(253,245,215,1) 0%, rgba(215,192,116,1) 70%, rgba(245,228,183,1) 100%);
-}
-#drop-list:hover .nav-link {
-    color: #3e2318;
-}
 .pop-up {
     position: absolute;
     list-style: none;
     width: 190px;
     height: auto;
-    top: 38px;
+    top: 40px;
     left: -1px;
-    border: 1px solid #D5BDA0;
-    background: #F4E2B4;
+    border: 1px solid #BFA485;
+    background: #FCEBC6;
     z-index: 1;
 }
 .pop-up_item {

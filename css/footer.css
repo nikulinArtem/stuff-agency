@@ -5,7 +5,7 @@
     height: 43px;
     color: #FFFBEA;
     background-color: #4E2C1E;
-    border-bottom: 2px solid black;
+    border-bottom: 1px solid #2F2219;
 }
 .contact-info {
     width: 100%;
@@ -14,7 +14,7 @@
     justify-content: space-between;
     align-items: center;
     color: #FFFBEA;
-    background: linear-gradient(180deg, #5F4430, #A5835D);
+    background: linear-gradient(180deg, #4e2c1e, #ad8b63);
 }
 .footer-links {
     list-style: none;
@@ -23,15 +23,17 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    font-size: 11px;
 }
 .footer-links li a {
     text-decoration: none;
     font-family: Arial, sans-serif;
-    font-size: 14px;
     color: #FFFBEA;
+    text-shadow: 0 1px 0 rgba(17, 17, 26, 0.46);
 }
 .contact-tel h3 {
-    font-family: BookAntiqua, serif;
+    font-family: GaramondC, serif;
+    font-size: 19px;
     font-weight: 300;
     text-wrap: none;
     color: white;
@@ -45,5 +47,5 @@
 }
 .author p {
     font-family: Tahoma, sans-serif;
-    font-size: 14px;
+    font-size: 11px;
 }

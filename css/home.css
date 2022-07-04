@@ -28,22 +28,25 @@
 }
 .left-block h2, .right-block h2 {
     font-family: 'GaramondC', serif;
-    font-size: 24px;
+    font-size: 23px;
     line-height: 1;
-    color: #35190d;
+    background: linear-gradient(0deg, #150702 0%, #5e3625 24%, #82451c 50%, #150702 50%, #5e3625 74%, #82451c 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .left-block h2 {
-    margin-top: 30px;
+    margin-top: 29px;
     margin-left: 45px;
+    padding-bottom: 2px;
 }
 .right-block h2 {
-    margin-top: 30px;
+    margin-top: 29px;
     margin-right: 45px;
+    padding-bottom: 2px;
 }
 .left-block p, .right-block p {
     font-family: Arial, sans-serif;
     color: #3e2318;
-    /*text-align: justify;*/
     line-height: 1.2;
     font-size: 13px;
 }
@@ -80,16 +83,19 @@
     cursor: pointer;
     width: 125px;
     height: 26px;
-    border: 1px solid #4E2C1E;
     border-radius: 5px;
     font-family: Verdana, sans-serif;
-    color: #FFFBEA;
-    background: linear-gradient(180deg, #E1B67A, #864F0D);
+    color: #FFFFFF;
+    text-shadow: 0 1px 0 rgba(17, 17, 26, 0.46);
+    background: linear-gradient(0deg, #77470b 0%, #d39538 73%, #f5dcb9 96%, #fff9e0 100%);
+    border: 1px solid #ab6e17;
 }
+
 .left-block_button:hover, .right-block_button:hover {
-    color: #35190d;
-    background: rgb(253,245,215);
-    background: linear-gradient(180deg, rgba(253,245,215,1) 0%, rgba(215,192,116,1) 70%, rgba(245,228,183,1) 100%);
+    color: #4e2c1e;
+    border: 1px solid #c7a865;
+    background: linear-gradient(0deg, #faedc7 0%, #eacf8f 13%, #e8c478 58%, #fff9e0 96%, #fff9e0 100%);
+
 }
 .left-block_button {
     float: right;
@@ -111,7 +117,7 @@
 .stuff-img {
     width: 182px;
     height: 189px;
-    /*border: 2px solid #7a5434;*/
+    border: 1px solid #A08357;
     margin: 15px 12px;
 }
 .stuff-img img {
@@ -122,6 +128,7 @@
 /*Основная текстовая информация*/
 
 .about-info {
+    width: 883px;
     margin: 10px 22px 110px 22px;
     font-family: Arial, sans-serif;
     color: #3e2318;
@@ -132,7 +139,6 @@
     margin: 10px 0;
 }
 .about-info p {
-    width: 883px;
     font-size: 14px;
     text-align: justify;
 

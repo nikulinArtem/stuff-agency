@@ -5,6 +5,9 @@
 @import url(stuff.css);
 
 /* Глобальные */
+.d-none {
+    display: none;
+}
 
 /*Шрифты*/
 @font-face {
@@ -13,7 +16,7 @@
 }
 @font-face {
     font-family: 'GaramondC';
-    src: url("../fonts/GaramondC.otf");
+    src: url("../fonts/Garamondc.otf");
 }
 
 /*Обнуление отступов*/
@@ -26,7 +29,7 @@
 .container {
     width: 100%;
     display: flex; justify-content: center;
-    background: url('../images/background.png') repeat;
+    background: url('../images/background d.png') repeat;
 }
 .container-content {
     width: 924px;
